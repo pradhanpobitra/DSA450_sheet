@@ -33,6 +33,5 @@ int main() {
         for(pair<int,int> x : bridges) {
             cout << x.first << " " << x.second << " ";
         }
-        // for(int i=2;i<=v;i++ ) if(is[i]) cout << i <<" ";
     }
 }
