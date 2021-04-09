@@ -16,8 +16,6 @@ class nQinArray {
             for(int i=0;i<n;i++) next[i] = i+1;
             next[n-1] = -1;
             for(int i=0;i<k;i++) front[i] = rear[i] = -1;
-            cout << "Give the input array :" << endl;
-            for(int i=0;i<n;i++) cin >> arr[i];
         } 
         void enqueue(int x,int qn){
             if(qn >= k) {
