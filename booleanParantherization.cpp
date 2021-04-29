@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 class Solution{
 public:
     long long dp[201][201][2];
@@ -38,3 +41,11 @@ public:
         return solve(S,0,N-1,1);
     }
 };
+
+int main() {
+    int n;
+    string s;
+    cin >> n >> s;
+    Solution obj;
+    cout << obj.countWays(n,s) << endl;
+}
