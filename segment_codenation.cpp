@@ -26,7 +26,7 @@ void update(vector<long long> &tree,int l,int r,int index,int ind,int val) {
 
 long long query(vector<long long> &tree,int l,int r,int x,int y,int index) {
     if(l > r) return 0;
-    if(x >= l && r <= y) return tree[index];
+    if(l >= x && r <= y) return tree[index];
     else if(r < x || l > y) return 0;
     int mid = ( l + r ) / 2;
     long long ans = query(tree,l,mid,x,y,2*index+1) + query(tree,mid+1,r,x,y,2*index + 2);
